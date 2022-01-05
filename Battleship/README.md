@@ -3,7 +3,7 @@
 https://www.facebookrecruiting.com/portal/coding_puzzles/?puzzle=3641006936004915
 
 
-![Battleship](../img/battleship.png)
+![Battleship](img/battleship.png)
 
 ```python
 # Write any import statements here
