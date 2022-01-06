@@ -1,7 +1,4 @@
-# Battleship
-
-https://www.facebookrecruiting.com/portal/coding_puzzles/?puzzle=3641006936004915
-
+# [Battleship](https://www.facebookrecruiting.com/portal/coding_puzzles/?puzzle=3641006936004915)
 
 ![Battleship](img/battleship.png)
 
@@ -23,7 +20,6 @@ def getHitProbability(R: int, C: int, G: List[List[int]]) -> float:
   
   probability = numerator / (R * C)
   return probability
-
 ```
 
 
