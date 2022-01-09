@@ -1,6 +1,7 @@
-# [Cafeteria](https://www.facebookrecruiting.com/portal/coding_puzzles/?puzzle=203188678289677)
+# [Director of Photography](https://www.facebookrecruiting.com/portal/coding_puzzles/?puzzle=870874083549040)
 
-![Cafeteria](img/director_of_ photography.png)
+
+![Director of Photography](img/photography.png)
 
 ```python
 
