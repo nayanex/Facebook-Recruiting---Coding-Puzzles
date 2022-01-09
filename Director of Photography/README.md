@@ -1,7 +1,8 @@
 # [Director of Photography](https://www.facebookrecruiting.com/portal/coding_puzzles/?puzzle=870874083549040)
 
 
-![Director of Photography](img/photography.png)
+![Director of Photography](img/director_of_photography.png)
+
 
 ```python
 
