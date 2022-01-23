@@ -14,7 +14,7 @@ def getArtisticPhotographCount(N: int, C: str, X: int, Y: int) -> int:
   B_indices = []
   P_indices = []
   
-  distance = range(X,Y+1)
+  distance = range(X, Y+1)
   
   for i, s in enumerate(C):
     if s == "P":
@@ -39,5 +39,19 @@ def getArtisticPhotographCount(N: int, C: str, X: int, Y: int) -> int:
   return art_photo_count
 ```
 
+Bellow one does not work, but offers a good starting point:
 
+```python
+# Write any import statements here
+import itertools
 
+def getArtisticPhotographCount(N: int, C: str, X: int, Y: int) -> int:
+  # Write your code here
+  res = 0
+  for i, j, k in itertools.combinations(range(N), 3):
+    if X <= abs(i-j) <= Y and X <= abs(j-k) <= Y \
+        and C[i]+C[j]+C[k] in ('PAB', 'BAP'):
+      res += 1
+  return res
+
+```
