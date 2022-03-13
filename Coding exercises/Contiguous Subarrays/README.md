@@ -3,6 +3,30 @@
 ![Contiguous Subarrays](img/contiguous-subarrays.png)
 
 ```python
+# Optimized Solution O(n)
+def count_subarrays_optimized(arr):
+  # Write your code here
+  dict_count = {}
+  splitted_parts = []
+  splitted_parts.append(arr)
+  
+  while len(splitted_parts):  
+    curr_list = list(splitted_parts.pop())
+    max_elem = max(curr_list)
+    split_pos = curr_list.index(max_elem)
+    start = 0
+    end = len(curr_list)
+
+    if len(curr_list) > 1:
+        part1 = curr_list[0:split_pos]
+        part2 = curr_list[split_pos +1: len(curr_list)]
+    
+        splitted_parts.append(part1)
+        if part2: splitted_parts.append(part2) 
+        
+    dict_count[curr_list[split_pos]] = len(curr_list[start:end])
+
+  return [dict_count[k] for k in arr]
 
 # Naive Solution
 def count_subarrays(arr):
@@ -82,8 +106,6 @@ if __name__ == "__main__":
   check(expected_2, output_2)
 
   # Add your own test cases here
-  
-  
 ```
 
 
